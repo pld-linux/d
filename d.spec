@@ -2,15 +2,20 @@ Summary:	D - The Directory Lister
 Summary(pl):	D - wy¶wietlacz katalogów
 Name:		d
 Version:	1.2.0
-Release:	2
-License:	GPL v2
+Release:	3
+License:	GPL v2+
 Group:		Applications/System
 Source0:	http://pages.xtn.net/~ecogburn/%{name}-%{version}.tar.bz2
 # Source0-md5:	7ce4ee18fd220588eab2c798e22b76a6
+Patch0:		%{name}-opt.patch
+Patch1:		%{name}-types.patch
+Patch2:		%{name}-info.patch
 URL:		http://pages.xtn.net/~ecogburn/d.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	help2man
+BuildRequires:	libstdc++-devel
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,6 +43,9 @@ podobnie jak w ls, ale w bardziej wygodnym pliku konfiguracyjnym.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
 %{__aclocal}
