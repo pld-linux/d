@@ -1,0 +1,63 @@
+--- d-1.2.0/src/parse_opt_cfg.cpp.orig	2003-08-25 05:40:19.000000000 +0000
++++ d-1.2.0/src/parse_opt_cfg.cpp	2003-12-01 07:20:26.000000000 +0000
+@@ -246,7 +246,7 @@
+ 		}
+ 
+ 		string s;
+-		unsigned idx;
++		string::size_type idx;
+ 		while (1) {
+ 			idx = arg.find(",", 0);
+ 			if (idx == arg.npos) {
+@@ -440,9 +440,9 @@
+ 		opt = "";
+ 		arg = "";
+ 
+-		unsigned idx = src.find('=', 0);
++		string::size_type idx = src.find('=', 0);
+ 		if (idx == src.npos) {
+-			unsigned idx2 = src.find(' ', idx);
++			string::size_type idx2 = src.find(' ', idx);
+ 			if (idx2 != src.npos) {
+ 				err << "  Spaces in the expression!";
+ 				throw runtime_error(err.str());
+@@ -463,7 +463,7 @@
+ 			throw runtime_error(err.str());
+ 		}
+ 
+-		unsigned idx2 = src.find('=', idx + 1);
++		string::size_type idx2 = src.find('=', idx + 1);
+ 		if (idx2 != src.npos) {
+ 			err << "  More than one equals sign on the line!";
+ 			throw runtime_error(err.str());
+@@ -515,7 +515,7 @@
+ 				arg.erase(0, 1);
+ 			}
+ 
+-			unsigned idx = arg.find(' ', 0);
++			string::size_type idx = arg.find(' ', 0);
+ 			if (idx != src.npos) {
+ 				err << "  Spaces in the expression!";
+ 				throw runtime_error(err.str());
+@@ -637,7 +637,7 @@
+ 
+ 			src = ptr;
+ 
+-			unsigned idx = src.find('#', 0);
++			string::size_type idx = src.find('#', 0);
+ 			if (idx != src.npos)
+ 				src.erase(idx);
+ 
+--- d-1.2.0/src/path.cpp.orig	2003-08-30 13:42:32.000000000 +0000
++++ d-1.2.0/src/path.cpp	2003-12-01 07:18:20.000000000 +0000
+@@ -82,8 +82,8 @@
+ //-----------------------------------------------------------------------------
+ void path::normalize_auxillary(const char* source_string)
+ {
+-	unsigned idx1;
+-	unsigned idx2;
++	string::size_type idx1;
++	string::size_type idx2;
+ 
+ 	fdir = "";
+ 	fname = "";
