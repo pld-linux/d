@@ -48,6 +48,7 @@ podobnie jak w ls, ale w bardziej wygodnym pliku konfiguracyjnym.
 %patch2 -p1
 
 %build
+cp -f /usr/share/automake/config.sub .
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
