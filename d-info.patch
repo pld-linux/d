@@ -1,0 +1,13 @@
+--- d-1.2.0/doc/d.texi.orig	2003-08-30 16:19:52.000000000 +0000
++++ d-1.2.0/doc/d.texi	2003-12-01 07:23:13.000000000 +0000
+@@ -17,8 +17,9 @@
+ 
+ 
+ @ifinfo
++@dircategory File utilities:
+ @direntry
+-* d: (d).       d: the directory lister.
++* d: (d).				d: the directory lister
+ @end direntry
+ @end ifinfo
+ 
