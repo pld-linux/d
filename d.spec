@@ -35,10 +35,10 @@ D jest alternatyw± dla ls i jego d³ugiego wyj¶cia. Optymalizuje
 wyj¶cie by uzyskaæ wiêcej miejsca na nazwê plików i redukuje
 prawdopodobieñstwo zawiniêcia listingu. Posiada tak¿e opcjê
 --dirs-first wypisuj±c± zawsze katalogi przed normalnymi plikami
-niezale¿nie od akutalnie ustawionych opcji sortowania. Pozwala na
+niezale¿nie od aktualnie ustawionych opcji sortowania. Pozwala na
 pliki konfiguracyjne w systemie oraz na koncie u¿ytkownika,
-pozwalaj±ce ustawiæ kilkana¶cie opcji dostêpnych z lini poleceñ, jak
-tak¿e opcjê color pozwalaj±c± ca³kowicie zmieniæ kolory wyjscie,
+pozwalaj±ce ustawiæ kilkana¶cie opcji dostêpnych z lini poleceñ, 
+jak tak¿e opcjê color pozwalaj±c± ca³kowicie zmieniæ kolory wyj¶cie,
 podobnie jak w ls, ale w bardziej wygodnym pliku konfiguracyjnym.
 
 %prep
