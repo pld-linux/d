@@ -1,12 +1,12 @@
 Summary:	D - The Directory Lister
 Summary(pl):	D - wy¶wietlacz katalogów
 Name:		d
-Version:	1.1.0
+Version:	1.2.0
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://pages.xtn.net/~ecogburn/%{name}-%{version}.tar.bz2
-# Source0-md5:	101f92f5977c01d1ef781e2b838b693e
+# Source0-md5:	7ce4ee18fd220588eab2c798e22b76a6
 URL:		http://pages.xtn.net/~ecogburn/d.html
 BuildRequires:	autoconf
 BuildRequires:	automake
