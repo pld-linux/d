@@ -37,7 +37,7 @@ prawdopodobieñstwo zawiniêcia listingu. Posiada tak¿e opcjê
 --dirs-first wypisuj±c± zawsze katalogi przed normalnymi plikami
 niezale¿nie od aktualnie ustawionych opcji sortowania. Pozwala na
 pliki konfiguracyjne w systemie oraz na koncie u¿ytkownika,
-pozwalaj±ce ustawiæ kilkana¶cie opcji dostêpnych z lini poleceñ, 
+pozwalaj±ce ustawiæ kilkana¶cie opcji dostêpnych z linii poleceñ, 
 jak tak¿e opcjê color pozwalaj±c± ca³kowicie zmieniæ kolory wyj¶cie,
 podobnie jak w ls, ale w bardziej wygodnym pliku konfiguracyjnym.
 
