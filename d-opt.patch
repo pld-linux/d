@@ -1,0 +1,16 @@
+--- d-1.2.0/configure.ac.orig	2003-08-26 20:39:50.000000000 +0000
++++ d-1.2.0/configure.ac	2003-12-01 07:07:35.000000000 +0000
+@@ -88,11 +88,9 @@
+ # Set variables based on given options
+ 
+ if [[ "$WANT_DEBUG_MODE" == "yes" ]]; then
+-    CXXFLAGS="-Wold-style-cast -Wredundant-decls -ansi -fno-nonansi-builtins -pedantic-errors -Wall -W -Wcast-qual -Wconversion -Winline -Wmissing-noreturn -Wmissing-prototypes -Woverloaded-virtual -Wpacked -Wpointer-arith -Wshadow -Wsign-compare -Wstrict-prototypes -Wwrite-strings -Wunreachable-code -O0 -ggdb3"
+-    LDFLAGS=
++    CXXFLAGS="$CXXFLAGS -Wold-style-cast -Wredundant-decls -ansi -fno-nonansi-builtins -pedantic-errors -Wall -W -Wcast-qual -Wconversion -Winline -Wmissing-noreturn -Wmissing-prototypes -Woverloaded-virtual -Wpacked -Wpointer-arith -Wshadow -Wsign-compare -Wstrict-prototypes -Wwrite-strings -Wunreachable-code"
+ else
+-    CXXFLAGS="-O3 -ffast-math -fforce-addr -finline-limit=512"
+-    LDFLAGS="--strip-all"
++    CXXFLAGS="$CXXFLAGS -ffast-math -fforce-addr -finline-limit=512"
+ fi
+ 
+ 
