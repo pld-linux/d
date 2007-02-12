@@ -1,5 +1,5 @@
 Summary:	D - The Directory Lister
-Summary(pl):	D - wy¶wietlacz katalogów
+Summary(pl.UTF-8):   D - wyÅ›wietlacz katalogÃ³w
 Name:		d
 Version:	1.2.0
 Release:	4
@@ -30,15 +30,15 @@ well as the 'color' option which can be used to completely customize
 the colorization of output, like ls but in a more convenient
 configuration file.
 
-%description -l pl
-D jest alternatyw± dla ls i jego d³ugiego wyj¶cia. Optymalizuje
-wyj¶cie by uzyskaæ wiêcej miejsca na nazwê plików i redukuje
-prawdopodobieñstwo zawiniêcia listingu. Posiada tak¿e opcjê
---dirs-first wypisuj±c± zawsze katalogi przed normalnymi plikami
-niezale¿nie od aktualnie ustawionych opcji sortowania. Pozwala na
-pliki konfiguracyjne w systemie oraz na koncie u¿ytkownika,
-pozwalaj±ce ustawiæ kilkana¶cie opcji dostêpnych z linii poleceñ, 
-jak tak¿e opcjê color pozwalaj±c± ca³kowicie zmieniæ kolory wyj¶cie,
+%description -l pl.UTF-8
+D jest alternatywÄ… dla ls i jego dÅ‚ugiego wyjÅ›cia. Optymalizuje
+wyjÅ›cie by uzyskaÄ‡ wiÄ™cej miejsca na nazwÄ™ plikÃ³w i redukuje
+prawdopodobieÅ„stwo zawiniÄ™cia listingu. Posiada takÅ¼e opcjÄ™
+--dirs-first wypisujÄ…cÄ… zawsze katalogi przed normalnymi plikami
+niezaleÅ¼nie od aktualnie ustawionych opcji sortowania. Pozwala na
+pliki konfiguracyjne w systemie oraz na koncie uÅ¼ytkownika,
+pozwalajÄ…ce ustawiÄ‡ kilkanaÅ›cie opcji dostÄ™pnych z linii poleceÅ„, 
+jak takÅ¼e opcjÄ™ color pozwalajÄ…cÄ… caÅ‚kowicie zmieniÄ‡ kolory wyjÅ›cie,
 podobnie jak w ls, ale w bardziej wygodnym pliku konfiguracyjnym.
 
 %prep
