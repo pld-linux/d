@@ -1,5 +1,5 @@
 Summary:	D - The Directory Lister
-Summary(pl.UTF-8):   D - wyświetlacz katalogów
+Summary(pl.UTF-8):	D - wyświetlacz katalogów
 Name:		d
 Version:	1.2.0
 Release:	4
